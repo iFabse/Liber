@@ -9,9 +9,6 @@
 
              - benutzer und email einrichten, 
              - Benutzer überprüfen Zeile 35
-
-             - hey, das ist ein Test für benutzer Erstellen und Github!
-             - Ich bin ein anderer benutzer und habe die datei geändert
         */
 
 
