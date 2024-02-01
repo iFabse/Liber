@@ -25,7 +25,7 @@
                 </summary>
             </details>
             <p>
-            Preis: 1,99 €
+            Preis: 2,99 €
             </p>
             <input class="textdata" type="text" name="namen" placeholder="Name" required><br>
             <input class="textdata" type="text" name="extras" placeholder="Extras"><br>
