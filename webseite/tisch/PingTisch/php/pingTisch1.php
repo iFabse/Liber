@@ -1,0 +1,21 @@
+<?php
+    include_once '/var/www/datenbank_verbindung.php';                    // verbindung zur Datenbank 
+
+$pingTisch = shell_exec("python3 ../python/pingTisch1.py");
+
+echo "$pingTisch";
+
+if ($pingTisch == "Tisch 1 besetzt") 
+{
+    $sql = "UPDATE tische SET Tisch1 = true;";
+} 
+
+
+if ($pingTisch == "Tisch 1 frei") 
+{
+    $sql = "UPDATE tische SET Tisch1 = false;";
+} 
+
+
+$result = mysqli_query($conn, $sql);
+?>
