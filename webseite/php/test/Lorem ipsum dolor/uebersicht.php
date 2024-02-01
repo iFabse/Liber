@@ -15,7 +15,7 @@
     <br>
     <br>
     <br>
-    <img class="bild" src="../../../doc/check.png" width="100" height="100"><br><br><br>
+    <img class="bild" src="../../../doc/bulb.png" width="100" height="100"><br><br><br>
 
     <form action="datenbank.php" method="POST">
         <div class="bezeichnung">
