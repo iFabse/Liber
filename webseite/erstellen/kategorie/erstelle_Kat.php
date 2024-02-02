@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
 
         // Das wird in Index Html geschrieben :
-        $neueZeile = '<div class="center"> <a href="Bestell/php/' . $systemNameKategorie . '/' . $systemNameKategorie . '.php"><img src="Bestell/doc/' . $bild . '" class="others" width="' . $bildGroesse . '" height="' . $bildGroesse . '"></a> </div>  <div class="bezeichnung"> <h1>' . $anzeigeName . '</h1> </div>
+        $neueZeile = '<div class="center"> <a href="webseite/php/' . $systemNameKategorie . '/' . $systemNameKategorie . '.php"><img src="webseite/doc/' . $bild . '" class="others" width="' . $bildGroesse . '" height="' . $bildGroesse . '"></a> </div>  <div class="bezeichnung"> <h1>' . $anzeigeName . '</h1> </div>
         
         
         
