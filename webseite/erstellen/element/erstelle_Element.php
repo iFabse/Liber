@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bildGroesse = $_POST["bildGroesse"];                                     // Bildgrpöße, von der Eingabemaske
 
 
+     /// DAS IST EIN TEST FÜR GITHUB
 
     // Pfad zum Verzeichnis, in dem die neuen Ordner erstellt werden sollen
     $verzeichnis = "../../php/";
