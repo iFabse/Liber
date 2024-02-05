@@ -3,7 +3,6 @@
 
 $pingTisch = shell_exec("python3 ../python/pingTisch1.py");
 
-echo "$pingTisch";
 
 if ($pingTisch == "Tisch 1 besetzt") 
 {
@@ -18,4 +17,5 @@ if ($pingTisch == "Tisch 1 frei")
 
 
 $result = mysqli_query($conn, $sql);
+
 ?>
