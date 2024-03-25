@@ -15,7 +15,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    include_once '/var/www/datenbank_verbindung.php';                    // verbindung zur Datenbank 
+    include_once '/home/pi/.datenbank_verbindung.php';                    // verbindung zur Datenbank 
 
 
     $bildName = $_POST["bildName"];                                                   // Bildname, von der Eingabemaske

@@ -1,5 +1,5 @@
 <?php
-        include_once '/var/www/datenbank_verbindung.php';                    // verbindung zur Datenbank 
+        include_once '/home/pi/.datenbank_verbindung.php';                    // verbindung zur Datenbank 
         include_once 'eingabe.php';
 
 
@@ -8,7 +8,7 @@
 
 
 
-            $auftrag = "Lorem ipsum dolor";
+            $auftrag = "Test Eintrag";
 
             $extras = $_POST['extras'];
 

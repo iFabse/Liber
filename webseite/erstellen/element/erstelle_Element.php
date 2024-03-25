@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    include_once '/var/www/datenbank_verbindung.php';                    // verbindung zur Datenbank 
+    include_once '/home/pi/.datenbank_verbindung.php';                    // verbindung zur Datenbank 
     $kategorie = $_POST["kategorie"];
     $name = $_POST["name"];
     $bild = $_POST["bild"];
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // PHP-Dokument für Datenbank erstellen
         $phpInhaltDatenbank = "<?php
-        include_once '/var/www/datenbank_verbindung.php';                    // verbindung zur Datenbank 
+        include_once '/home/pi/.datenbank_verbindung.php';                    // verbindung zur Datenbank 
         include_once 'eingabe.php';
 
 

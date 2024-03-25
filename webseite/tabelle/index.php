@@ -23,7 +23,7 @@
         </thead>
         <tbody>
         <?php
-    include_once '/var/www/datenbank_verbindung.php';                    // verbindung zur Datenbank 
+    include_once '/home/pi/.datenbank_verbindung.php';                    // verbindung zur Datenbank 
 
         $sql = "SELECT * FROM menu";
         $result = $conn->query($sql);
