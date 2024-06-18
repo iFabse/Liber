@@ -11,21 +11,22 @@ if (!isset($_SESSION['login_user'])) {
 
 include_once '/home/pi/.datenbank_verbindung.php'; // Verbindung zur Datenbank
 
-if (isset($_GET["kategorie"])) { // Wenn Löschen Button gedrückt und wert ist dabei = true
-    $kategorie = $_GET["kategorie"];
+if (isset($_GET["id"])) { // Wenn Löschen Button gedrückt und wert ist dabei = true
+    $id = $_GET["id"];
    
     //Lade werte, um Elemente im PHP Ordner zu löschen (bezeichnungen, Zeile)
-    $sql = $conn->prepare("SELECT * FROM elemente WHERE kategorie = $kategorie");
-    $sql->execute();
-    $result = $sql->get_result();
+    $sql = "SELECT * FROM elemente WHERE id = $id";
+    $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $htmlZeile = $row['zeile'];
         $bezeichnung = $row['bezeichnung'];
+        $kategorie = $row['kategorie'];
         
         $verzeichnis = "../../php";
         $neuerOrdner = $verzeichnis . '/' . $kategorie . '/' . $bezeichnung;
+        
         
         // Löschfunktion mit ChatGPT erstellt
         if (file_exists($neuerOrdner)) {
@@ -51,7 +52,7 @@ if (isset($_GET["kategorie"])) { // Wenn Löschen Button gedrückt und wert ist 
             echo "Die Zeile wurde gelöscht.";
             
             // Eintrag in der Datenbank löschen
-            $loescheKat = $conn->prepare("DELETE FROM elemente WHERE bezeichnung = $kategorie");
+            $loescheKat = $conn->prepare("DELETE FROM elemente WHERE id = $id");
             if ($loescheKat->execute()) {
                 echo "Eintrag in der Datenbank wurde erfolgreich gelöscht.";
             } else {
@@ -65,7 +66,6 @@ if (isset($_GET["kategorie"])) { // Wenn Löschen Button gedrückt und wert ist 
         echo "Keine passenden Einträge in der Kategorie gefunden.";
     }
     
-    $stmt->close();
 }
 
 $conn->close();

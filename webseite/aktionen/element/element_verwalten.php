@@ -48,24 +48,20 @@ if (!isset($_SESSION['login_user'])) {
                             die("Falsche Datenbank ausgewählt: " . $conn->error);
                         }
 
-                        // Zähler für Anzeige-ID (nicht die ID aus der Datenbank!)
-                        $displayID = 1;
                         
                         while ($row = $result->fetch_assoc()) { // Hier werden einzelne Spalten ausgegeben
                             echo "
                             <tr>
-                                <td>$displayID</td>
+                                <td>$row[id]</td>
                                 <td>$row[kategorie]</td>
                                 <td>$row[bezeichnung]</td>
                                 <td>$row[bild]</td>
                                 <td>$row[kosten]</td>
                                 <td>
-                                    <a class='btn btn-danger btn-sm' href='delete.php?kategorie=$row[kategorie]'>Löschen</a>
+                                    <a class='btn btn-danger btn-sm' href='delete.php?id=$row[id]'>Löschen</a>
                                 </td>
                             </tr>
                             ";
-
-                            $displayID++;
                         }
                         ?>
                     </tbody>

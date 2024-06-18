@@ -12,4 +12,3 @@ with open(file_path, 'w') as file:
         if i != line_to_delete:
             file.write(line)
 
-# Mit ChatGPT erstellt, da wir keine großen python Kenntnisse haben
