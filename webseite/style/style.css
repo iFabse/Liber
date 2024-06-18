@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    background-color: white;
+    height: 100%;
+}
+
+div.bezeichnung {
+    font: bold 8px Sans-Serif;
+    color: black;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    top: 100px;
+    left: 50px;
+}
+
+
+
+/*Im Datenschutz und Impressum*/
+
+div.centerFuerText {
+    font-family: Sans-Serif;
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+    top: 100px;
+    left: 50px;
+}
+
+div.centerFuerTextDaten {
+    font-family: Sans-Serif;
+    color: black;
+    display: block;
+}
+
+
+
+/*Button CSS für Hinzufügen von Elementen, Kategorien, Benutzer*/
+
+.katHinzufügen {
+    position: fixed; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+/*Preis darstellung*/
+
+p{
+    font-size: 200%;
+}
+
+
+
+/*Logout Position und Bildeinstellungen*/
+
+.abmeldeButton {
+    position: absolute;
+    top: 5px; /* Abstand vom oberen Rand */
+    right: 5px; /* Abstand vom rechten Rand */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.logoutBild{
+    height: 30px; 
+    width: 30px;
+}
+
+
+
+/*Alles für Datenschutz und Impressum*/
+
+.container{
+    min-height: 100%;
+}
+
+.main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+footer {
+    font-family: Sans-Serif;
+    position:relative;
+    margin-top:-80px;
+    clear:both;
+    color: inherit;
+    text-decoration: inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footerText {
+    font-family: Sans-Serif;
+    color: inherit;
+    text-decoration: inherit;
+}

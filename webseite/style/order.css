@@ -1,0 +1,158 @@
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /*min-height: 100vh;*/
+}
+
+
+/*Einstellungen für Bilder in Bestellungen*/
+
+.bild {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*Verwendung in RFID Karten Anzeige*/
+
+.rfidAnzeige {
+
+    font-size: 300%;
+    position: relative;
+}
+
+object {
+    position: relative;
+    font-size: 300%;
+}
+
+
+
+/*Design der Texteingabe Felder (schön mittig,...)*/
+
+.textdata {
+    margin-top: 8%;
+    width: 60%;
+    font-family: inherit;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+::placeholder {
+    border-bottom: 2px solid grey;
+    font-family: inherit;
+    color: grey;
+}
+
+
+
+/*Der Submit "Button" für das Absenden von texteinträgen*/
+
+.submit {
+  margin-top: 5%;
+  font-family: inherit;
+  width: 40%;
+  border: 0;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  color: black;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit:focus {
+  margin-top: 5%;
+  font-family: inherit;
+  width: 40%;
+  border: 0;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  background-color: rgb(43, 168, 50);
+  display: inline-block;
+  border: 1px solid rgb(43, 168, 50);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+/*Button z.B. für den logout Button*/
+
+.button {
+    margin-top: 5%;
+    font-family: inherit;
+    width: 40%;
+    border: 0;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button:focus{
+    background-color:rgb(7, 53, 9);
+    border: 1px solid rgb(43, 168, 50);
+    color: black;
+}
+
+
+
+/*Alles für Elementen Info großteil mit ChatGPT*/
+
+summary {
+
+    font-size: 300%;
+    position: relative;
+}
+
+summary::marker {
+    color: transparent;
+}
+
+summary::after {
+   
+    content: "i";
+    position: absolute;
+    color: #2886fa;
+    font-size: 100%;
+    font-weight: bold;
+    right: 10%;
+    bottom: -0;
+    transition: all 0.5s;
+}
+
+details[open] summary::after {
+    content: "i";
+    color:green;
+    transform: translate(5px,0) rotate(360deg);
+}
+
+.infos {
+    font-size: 200%;
+}
