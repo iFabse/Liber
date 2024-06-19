@@ -52,6 +52,10 @@ div.centerFuerTextDaten {
     display: block;
 }
 
+li{
+    list-style-type: none;
+}
+
 
 
 /*Button CSS für Hinzufügen von Elementen, Kategorien, Benutzer*/
